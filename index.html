@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>aircrafts</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <style>
     #header{
       background-color:#368BC1;height:75px;
@@ -21,14 +22,31 @@
   </style>
 </head>
 <body>
+
+
 <audio controls="controls">
   Your browser does not support the &lt;audio&gt; tag. 
   <source src="RelaxingMusic.mp3" />
-</audio> 
-  
+</audio>
+
+
+<script>
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+
 <div id="header">
   <h1>Hello this is a website about aircrafts</h1>
 </div>
+
+
 <div id="sidebar">
   <p>In this website, you will learn about:</p>
   <ol>
@@ -39,6 +57,8 @@
   </ol>
   <p>there will also be images of planes.</p>
 </div>
+
+
 <div id="content">
   <p>The airplane was invented by two American brothers, Orville and Wilbur Wright. The Wright brothers patented their invention on May 22, 1906.</p>
   <img src="aircraft1.jpeg"width="150px" height="150px">
@@ -56,7 +76,8 @@
       <th>A video of them</th>
     </tr>
     <tr>
-      <td><a href="">A-10 Thunderbolt II</a></td>
+      <td><button onclick="myFunction('Demo1')" >A-10 Thunderbolt II</button><div id="Demo1" class="w3-container w3-hide"><h4></h4><p></p></div>
+</td>
       <td>439 mlies per hour(mph)</td>
       <td>$45.3 million</td>
       <td><img src="thunderbolt.jpg"width="150px" height="150px"></td>

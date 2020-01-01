@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>aircrafts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
   <style>
     #header{
       background-color:#368BC1;height:75px;
@@ -20,29 +21,7 @@
       border: 1px solid black;
     }
 
-    .accordion {
-      background-color: #eee;
-      color: #444;
-      cursor: pointer;
-      padding: 18px;
-      width: 100%;
-      border: none;
-      text-align: left;
-      outline: none;
-      font-size: 15px;
-      transition: 0.4s;
-    }
-
-    .active, .accordion:hover {
-      background-color: #ccc; 
-    }
-
-    .panel {
-      padding: 0 18px;
-      display: none;
-      background-color: white;
-      overflow: hidden;
-    }
+  
 </style>
     
 </head>
@@ -56,22 +35,7 @@
 
 
 
-<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
-</script>
 
 
 <div id="header">
@@ -108,7 +72,7 @@ for (i = 0; i < acc.length; i++) {
       <th>A video of them</th>
     </tr>
     <tr>
-      <td><button class="accordion">Section 1</button><div class="panel"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div></td>
+      <td><div class="w3-dropdown-hover"><button class="w3-button w3-black">Hover Over Me!</button><div class="w3-dropdown-content w3-bar-block w3-border"><a href="#" class="w3-bar-item w3-button">Link 1</a><a href="#" class="w3-bar-item w3-button">Link 2</a><a href="#" class="w3-bar-item w3-button">Link 3</a></div></div></td>
       <td>439 mlies per hour(mph)</td>
       <td>$45.3 million</td>
       <td><img src="thunderbolt.jpg"width="150px" height="150px"></td>

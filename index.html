@@ -3,7 +3,6 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>aircrafts</title>
-  <link rel="stylesheet" href="w3.css">
   <style>
     #header{
       background-color:#368BC1;height:75px;
@@ -20,6 +19,7 @@
     table, th, td {
       border: 1px solid black;
     }
+
     .accordion {
       background-color: #eee;
       color: #444;
@@ -34,29 +34,17 @@
     }
 
     .active, .accordion:hover {
-      background-color: #ccc;
-    }
-
-    .accordion:after {
-      content: '\002B';
-      color: #777;
-      font-weight: bold;
-      float: right;
-      margin-left: 5px;
-    }
-
-    .active:after {
-       content: "\2212";
+      background-color: #ccc; 
     }
 
     .panel {
       padding: 0 18px;
+      display: none;
       background-color: white;
-      max-height: 0;
       overflow: hidden;
-      transition: max-height 0.2s ease-out;
     }
-  </style>
+</style>
+    
 </head>
 <body>
 

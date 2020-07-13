@@ -2,7 +2,11 @@
 <html>
 <head>
 <title>aircrafts</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <link rel="stylesheet" href="w3.css">
   <style>
     #header{
@@ -348,6 +352,26 @@
       <td><button onclick="window.location.href = 'https://en.wikipedia.org/wiki/Harrier_Jump_Jet'">click here to go to wikipedia!</button></td>
     </tr>
   </table>
+  <script>
+    var vm = new Vue({
+			el: '#app',
+			data: {
+				aircrafts: [{
+					name: 'F-22 Raptor',
+					image: 'F-22-missile.jpg',
+					video: "https://poopypants123.com"
+				}, {
+					name: 'Concorde',
+					image: 'concorde.jpg',
+					video: "https://guy the bob .com"
+				}, {
+					name: 'Chengdu J-20',
+					image: 'j-20.jpg',
+					video: "https://piglet.com"
+				}]
+			}
+		})
+  </script>
   <table>
     <tr>
       <th>aircraft carrier names</th>
